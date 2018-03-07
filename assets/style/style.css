@@ -1,0 +1,166 @@
+/* template*/
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 34px;
+    color: black;
+    background: url("../images/background/concert_crowd2.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover, 
+    -o-background-size: cover;
+    background-size: cover;
+    border: 1px solid black;
+}
+
+title {
+    border: 1px solid black;
+
+}
+.main-nav {
+    border: 1px solid gray; 
+    padding:2px;
+}
+.nav-item {
+    color: blue;
+    border: 1px solid black;
+}
+
+#dynamic-content {
+    color: blueviolet;
+    border: 1px solid black;
+}
+
+.main-footer {
+    color: pink;
+    border: 1px solid black;
+}
+
+/*Home page*/
+#home-page-title {
+    font-size: 100px;
+}
+
+#home-page-tag-line {
+
+}
+
+#btn-get-started {
+
+}
+
+.page-container {
+    width: 100;
+    height: 800px; 
+    background-color: red;
+    font-size: 50px;
+}
+
+#friends-title {
+    background-color: red;
+}
+
+.application-info {
+
+}
+
+.user-quotes {
+
+}
+
+/*Profile page*/
+
+#user-profile-container {
+
+}
+
+#profile-title {
+    color: black;
+}
+
+.user-info {
+    border: 1px solid black;
+}
+
+#user-name, 
+#user-location, 
+#user-contact, 
+#user-interests, #user-age {
+    border: 1px solid black;
+}
+
+ #user-profile-picture {
+    border: 1px solid black;
+ }
+
+ /*Shows page*/
+
+ #upcoming-shows-container {
+    border: 1px solid black;
+ }
+
+ .shows-title {
+    border: 1px solid black;
+ }
+
+ .show-info-card
+ .upcoming-show-card {
+    border: 1px solid black;
+ }
+
+ #past-shows-container {
+    border: 1px solid black;
+ }
+
+ .shows-title {
+    border: 1px solid black;
+ }
+
+ .show-info-card
+ .past-show-card {
+    border: 1px solid black;
+ }
+
+ /* Friends page */
+
+  #friends-list-container {
+    border: 1px solid black;
+  }
+
+  #friends-title {
+    border: 1px solid black;
+  }
+  ul, div{
+    border: 1px solid black;
+  }
+
+  #list-of-friends {
+    border: 1px solid black;
+  }
+
+  /* Meet up Page */
+
+  #event-info-container {
+
+  }
+
+  .event-info-title {
+
+  }
+
+  .event-info-content {
+
+  }
+
+  #band-content {
+
+  }
+
+  #venue-content {
+
+  }
+  #time-content {
+
+  }
+  #going-content {
+
+  }
