@@ -9,15 +9,13 @@
 
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 
-    <script src="assets/javascript/script.js"></script>
-
     <title>MusicVerse</title>
 
 </head>
 
 <body>
 
-    <nav class="main-nav">
+    <nav id="main-nav">
 
         <div class="nav-item">Home</div>
         <div class="nav-item">Profile</div>
@@ -29,7 +27,7 @@
 
     <!-- HOME PAGE -->
 
-    <div id="home-page-container">
+    <div id="home-page" class="page" data-name="home">
 
         <!-- Title -->
 
@@ -95,7 +93,7 @@
 
         <div id="profile-title">
 
-            <h1 class="page-head">Meetups</h1>
+    <div id="meet-up-page" class="page" data-name="meet">
 
             <p class="main-graf">Get together before the show to discuss the opening song ... or reconnect afterwards to rank the entire set list.
                 Musicverse makes it easy to fill in the blanks!</p>
@@ -145,12 +143,14 @@
 
         <!-- PROFILE PAGE -->
 
-        <div id="user-profile-page">
-
+    <div id="user-profile-page" class="page" data-name="profile">
+      
             <!-- Profile title -->
 
             <div id="profile-title">
+              
                 <h1 class="page-head">My profile</h1>
+              
             </div>
 
             <p class="main-graf">Don't be shy &ndash; let everyone know about your music tastes and how to keep in touch.</p>
@@ -171,7 +171,7 @@
 
         <!-- SHOWS PAGE -->
 
-        <div id='shows-page'>
+    <div id='shows-page' class="page" data-name="shows">
 
             <div id="upcoming-shows-container">
 
@@ -209,10 +209,12 @@
 
         <!-- FRIENDS LIST PAGE -->
 
-        <div id="friends-list-page">
-
+    <div id="friends-list-page" class="page" data-name="friends">
+      
             <div id="friends-title">
+              
                 <h1 class="page-head">My friends</h1>
+              
             </div>
 
             <p class="main-graf">"Would Tracy like a Clash cover band?" "Is Jason still into dubstep?" "Didn't Patrick say he'd never see a country
@@ -233,7 +235,12 @@
 
         </div>
 
-        <footer class="main-footer">Copyright 2018</footer>
+    <footer id="main-footer">Copyright 2018</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/script.js" defer></script>
 
 </body>
 
