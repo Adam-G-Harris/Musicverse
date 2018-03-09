@@ -23,4 +23,5 @@
 KEYS
 * Ticketmaster API key: 1A4A4tIReeiDsazL5pdDvl5taxHGelJH
 * YouTube API key: AIzaSyAdXpaSwmqeAGhuMio9FuatSPShnX3G2O4
+* Google: AIzaSyAdXpaSwmqeAGhuMio9FuatSPShnX3G2O4
 
