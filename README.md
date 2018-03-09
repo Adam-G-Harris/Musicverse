@@ -19,5 +19,8 @@
    * Ryan has key
 * Must have User Input Validation
   * this will come from Firebase
-*Ticketmaster API key: 1A4A4tIReeiDsazL5pdDvl5taxHGelJH
+
+KEYS
+* Ticketmaster API key: 1A4A4tIReeiDsazL5pdDvl5taxHGelJH
+* YouTube API key: AIzaSyAdXpaSwmqeAGhuMio9FuatSPShnX3G2O4
 
