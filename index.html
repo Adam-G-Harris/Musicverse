@@ -9,27 +9,24 @@
 
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
 
-    <script src="assets/javascript/script.js"></script>
-
     <title>MusicVerse</title>
 
 </head>
 
 <body>
 
-    <nav class="main-nav">
+    <nav id="main-nav">
 
         <div class="nav-item">Home</div>
         <div class="nav-item">Profile</div>
         <div class="nav-item">Shows</div>
         <div class="nav-item">Friends</div>
-        <div class="nav-item">Meet up</div>
 
     </nav>
 
     <!-- HOME PAGE -->
 
-    <div id="home-page-container">
+    <div id="home-page" class="page" data-name="home">
 
         <!-- Title -->
 
@@ -91,149 +88,110 @@
 
         </div>
 
-        <!-- MEET UP PAGE -->
+    </div>
+
+    <!-- PROFILE PAGE -->
+
+    <div id="user-profile-page" class="page" data-name="profile">
+
+        <!-- Profile title -->
 
         <div id="profile-title">
 
-            <h1 class="page-head">Meetups</h1>
-
-            <p class="main-graf">Get together before the show to discuss the opening song ... or reconnect afterwards to rank the entire set list.
-                Musicverse makes it easy to fill in the blanks!</p>
-
-
-            <!-- Band name -->
-
-            <div class="event-info-block">
-
-                <div class="event-info-title">Band</div>
-
-                <div class="event-info-content" id="band-content"></div>
-
-            </div>
-
-            <!-- Venues the band is playing at -->
-
-            <div class="event-info-block">
-
-                <div class="event-info-title">Venue</div>
-
-                <div class="event-info-content" id="venue-content"></div>
-
-            </div>
-
-            <!-- Times the band is playing -->
-
-            <div class="event-info-block">
-
-                <div class="event-info-title">Time</div>
-
-                <div class="event-info-content" id="time-content"></div>
-
-            </div>
-
-            <!-- People who are going to the concerts/events -->
-
-            <div class="event-info-block">
-
-                <div class="event-info-title">Going</div>
-
-                <div class="event-info-content" id="going-content"></div>
-
-            </div>
+            <h1 class="page-head">My profile</h1>
 
         </div>
 
-        <!-- PROFILE PAGE -->
+        <p class="main-graf">Don't be shy &ndash; let everyone know about your music tastes and how to keep in touch.</p>
 
-        <div id="user-profile-page">
+        <!-- User information -->
 
-            <!-- Profile title -->
+        <div class="user-info" id="user-name"></div>
+        <div class="user-info" id="user-location"></div>
+        <div class="user-info" id="user-contact"></div>
+        <div class="user-info" id="user-interests"></div>
+        <div class="user-info" id="user-age"></div>
 
-            <div id="profile-title">
-                <h1 class="page-head">My profile</h1>
+        <!-- User profile picture -->
+
+        <div id="user-profile-picture"></div>
+
+    </div>
+
+    <!-- SHOWS PAGE -->
+
+    <div id='shows-page' class="page" data-name="shows">
+
+        <div id="upcoming-shows-container">
+
+            <div class="shows-title">
+                <h1 class="page-head">Upcoming shows</h1>
             </div>
+            <p class="main-graf">The countdown is on to these great shows ...</p>
 
-            <p class="main-graf">Don't be shy &ndash; let everyone know about your music tastes and how to keep in touch.</p>
+            <!-- I put 3 divs as an example, the actual amount will come from the API call -->
 
-            <!-- User information -->
-
-            <div class="user-info" id="user-name"></div>
-            <div class="user-info" id="user-location"></div>
-            <div class="user-info" id="user-contact"></div>
-            <div class="user-info" id="user-interests"></div>
-            <div class="user-info" id="user-age"></div>
-
-            <!-- User profile picture -->
-
-            <div id="user-profile-picture"></div>
+            <div class="show-info-card upcoming-show-card"></div>
+            <div class="show-info-card upcoming-show-card"></div>
+            <div class="show-info-card upcoming-show-card"></div>
 
         </div>
 
-        <!-- SHOWS PAGE -->
+        <!-- Container for a list of past shows and their data, should be on the right side -->
 
-        <div id='shows-page'>
+        <div id="past-shows-container">
 
-            <div id="upcoming-shows-container">
-
-                <div class="shows-title">
-                    <h1 class="page-head">Upcoming shows</h1>
-                </div>
-                <p class="main-graf">The countdown is on to these great shows ...</p>
-
-                <!-- I put 3 divs as an example, the actual amount will come from the API call -->
-
-                <div class="show-info-card upcoming-show-card"></div>
-                <div class="show-info-card upcoming-show-card"></div>
-                <div class="show-info-card upcoming-show-card"></div>
-
+            <div class="shows-title">
+                <h2 class="section-head">Show Archive</h2>
             </div>
+            <p class="main-graf">Think of this as your digital ticket stub.</p>
 
-            <!-- Container for a list of past shows and their data, should be on the right side -->
+            <!-- I put 3 divs as an example, the actual amount will come from the API call -->
 
-            <div id="past-shows-container">
-
-                <div class="shows-title">
-                    <h2 class="section-head">Show Archive</h2>
-                </div>
-                <p class="main-graf">Think of this as your digital ticket stub.</p>
-
-                <!-- I put 3 divs as an example, the actual amount will come from the API call -->
-
-                <div class="show-info-card past-show-card"></div>
-                <div class="show-info-card past-show-card"></div>
-                <div class="show-info-card past-show-card"></div>
-
-            </div>
+            <div class="show-info-card past-show-card"></div>
+            <div class="show-info-card past-show-card"></div>
+            <div class="show-info-card past-show-card"></div>
 
         </div>
 
-        <!-- FRIENDS LIST PAGE -->
+    </div>
 
-        <div id="friends-list-page">
+    <!-- FRIENDS LIST PAGE -->
 
-            <div id="friends-title">
-                <h1 class="page-head">My friends</h1>
-            </div>
+    <div id="friends-list-page" class="page" data-name="friends">
 
-            <p class="main-graf">"Would Tracy like a Clash cover band?" "Is Jason still into dubstep?" "Didn't Patrick say he'd never see a country
-                band?"</p>
+        <div id="friends-title">
 
-            <p class="main-graf">Musicverse makes it easy to remember friends' music preferences and even easier to let them know who's coming
-                to town.</p>
-
-            <h2 class="section-head">Who's in your Musicverse</h2>
-
-            <!-- List of friends -->
-
-            <ul id="list-of-friends">
-
-                <!-- Amount of friend divs that are inserted will depend on that users amount on friends -->
-
-            </ul>
+            <h1 class="page-head">My friends</h1>
 
         </div>
 
-        <footer class="main-footer">Copyright 2018</footer>
+        <p class="main-graf">"Would Tracy like a Clash cover band?" "Is Jason still into dubstep?" "Didn't Patrick say he'd never see a country
+            band?"
+        </p>
+
+        <p class="main-graf">Musicverse makes it easy to remember friends' music preferences and even easier to let them know who's coming to
+            town.
+        </p>
+
+        <h2 class="section-head">Who's in your Musicverse</h2>
+
+        <!-- List of friends -->
+
+        <ul id="list-of-friends">
+
+            <!-- Amount of friend divs that are inserted will depend on that users amount on friends -->
+
+        </ul>
+
+    </div>
+
+    <footer id="main-footer">Copyright 2018</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+        crossorigin="anonymous"></script>
+
+    <script src="assets/javascript/script.js" defer></script>
 
 </body>
 
