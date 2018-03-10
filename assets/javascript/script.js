@@ -1,3 +1,14 @@
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyA3Wi8pjiM9gWl9vpYE8wzuiApYb2d_s8I",
+    authDomain: "musicverse-e0621.firebaseapp.com",
+    databaseURL: "https://musicverse-e0621.firebaseio.com",
+    projectId: "musicverse-e0621",
+    storageBucket: "musicverse-e0621.appspot.com",
+    messagingSenderId: "179210130029"
+  };
+  firebase.initializeApp(config);
+
 window.onload = () => {
 
     const navTabs = document.getElementsByClassName('nav-item');
