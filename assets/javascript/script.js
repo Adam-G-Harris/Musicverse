@@ -45,3 +45,4 @@ var nodeList = anime({
   targets: els,
   translateX: 250
 });
+
