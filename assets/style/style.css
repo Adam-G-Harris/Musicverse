@@ -115,3 +115,24 @@ body {
     border: 1px solid black;
     font-family: 'Barlow Condensed', sans-serif;
 }
+
+/* these are styles for show page */
+.panel-body {
+    word-break: break-all;
+  }
+
+  .lineItemStyle {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .ticketLink {
+    font-size: 16px;
+  }
+
+  .invite {
+    margin-left: 10px;
+  }
+  /* end of styles for show page */

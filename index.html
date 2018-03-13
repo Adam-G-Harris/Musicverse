@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 
     <title>MusicVerse</title>
 
@@ -156,12 +157,32 @@
                 <h1 class="page-head">Upcoming shows</h1>
             </div>
             <p class="main-graf">The countdown is on to these great shows ...</p>
+            <form id="artist-form">
 
-            <!-- I put 3 divs as an example, the actual amount will come from the API call -->
+                <!-- Label for Text Box -->
+                <label for="artist-input">Choose Your Artist</label>
 
-            <div class="show-info-card upcoming-show-card"></div>
-            <div class="show-info-card upcoming-show-card"></div>
-            <div class="show-info-card upcoming-show-card"></div>
+                <!-- Text Input Box -->
+                <input type="text" id="artist-input">
+                <br>
+
+                <!-- Submit Button -->
+                <input id="select-artist" type="submit" value="GO!">
+            </form>
+
+            <!-- Card -->
+            <div class="card" style="width: 50rem;">
+                <img class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <strong>
+                            <i class="fas fa-music"></i> Upcoming Shows
+                        </strong>
+                    </h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                </ul>
+            </div>
 
         </div>
 
@@ -216,8 +237,7 @@
 
     <footer id="main-footer">Copyright 2018</footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
 
