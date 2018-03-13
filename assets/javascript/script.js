@@ -38,3 +38,10 @@ window.onload = () => {
 
     init();
 };
+
+var els = document.querySelectorAll('#nodeList .el');
+
+var nodeList = anime({
+  targets: els,
+  translateX: 250
+});
