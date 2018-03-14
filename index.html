@@ -8,29 +8,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-
     <title>MusicVerse</title>
    
 </head>
 
 <body>
-
-    <nav id="main-nav" class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">MusicVerse</a>
-            </div>
-            <ul class="nav navbar-nav">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Profile</li>
-                <li class="nav-item">Shows</li>
-                <li class="nav-item">Friends</li>
-                <lilass="nav-item">Meet up</li>
-            </ul>
-        </div>
-    </nav>
+    
+            <nav id="main-nav" class="navbar navbar-expand-sm bg-dark navbar-dark">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Shows</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Friends</a>
+                      </li>
+                    </ul>
+                  </nav>
 
     <!-- HOME PAGE -->
 
@@ -74,7 +76,7 @@
 
         <!-- Top background image -->
 
-        <img id="background-image" src="/assets/images/concert_crowdcoder.jpg" alt="Music">
+        <img class="img-fluid" id="background-image" src="assets/images/backgrounds/concertcrowd_sliderviolet.jpg" alt="Music">
 
         <!-- Home page information container -->
 
@@ -176,40 +178,73 @@
 
         <div id="profile-title">
 
-            <h1 class="page-head">My profile</h1>
-            <div class="container sign">
-                    <form class="form-signin col-sm-5 offset-1">
-                        <h2 class="form-signin-heading">Please sign in</h2>
-                            <label for="inputEmail" class="sr-only">Email address</label>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                            <label for="inputPassword" class="sr-only">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                            </div>
-                                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-                    </form>
-                    <form class="form-signup col-sm-5 offset-1">
-                        <h2 class="form-signin-heading">Please sign up</h2>
-                            <label for="inputEmail" class="sr-only">Email address</label>
-                            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                            <label for="inputPassword" class="sr-only">Password</label>
-                            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox" value="remember-me"> Remember me
-                            </label>
-                            </div>
-                                <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
-                    </form>
-                </div>
-
-        </div>
-
-        <p class="main-graf">Don't be shy &ndash; let everyone know about your music tastes and how to keep in touch.</p>
-
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-6">
+                      <h2>My Profile</h2>
+                      
+                                <div class="card" style="width:400px">
+                                  <img class="card-img-top" src="assets/images/backgrounds/concert_crowdcoder.jpg" alt="Card image">
+                                  <div class="card-body">
+                                    <h4 class="card-title">Musciverse</h4>
+                                    <ul class="list-group">
+                                            <li class="list-group-item" "user-info" id="user-name">Username: MusicVerse</li>
+                                            <li class="list-group-item" "user-info" id="user-location">Location: Kansas City, MO</li>
+                                            <li class="list-group-item" "user-info" id="user-contact">Contact: 816-385-0324</li>
+                                            <li class="list-group-item" "user-info" id="user-interests">Interests: Live music, acoustic guitar, reading, cooking, coding, traveling</li>
+                                            <li class="list-group-item" "user-info" id="user-age"> Age: infinity</li>
+                                            <a  class="inline-block" href="https://www.facebook.com/"><img src="assets/images/socialmedia/if_Facebook_Color_1435164.png" target="_blank" class="social" alt="Facebook" height="75" width="75" />
+                                            </a>
+                                            <a  class="inline-block" href="https://www.instagram.com/"><img src="assets/images/socialmedia/if_instagram_Color_1435162.png"  target="_blank" class="social" alt="Instagram" height="75" width="75"/>
+                                            </a>
+                                            <a class="inline-block" href="https://www.youtube.com/"><img src="assets/images/socialmedia/if_YouTube_571117.png" target="_blank" class="social" alt="YouTube" height="75" width="75" />
+                                            </a>
+                                            <a  class="inline-block" href="https://www.spotify.com/us/"><img src="assets/images/socialmedia/if_social-12_1591852.png" target="_blank" class="social" alt="Spotify" height="50" width="50" />
+                                            </a>
+                                            <a  class="inline-block" href="https://www.web.skype.com"><img src="assets/images/socialmedia/if_10_940958.png"  target="_blank" class="social" alt="Skype" height="50" width="50" />
+                                            </a>
+                                            <a class="inline-block" href="https://twitter.com/"><img src="assets/images/socialmedia/if_Twitter_Color_1435159.png" target="_blank" class="social" alt="Twitter" height="75" width="75"/>
+                                            </a>
+                                    
+                                        </ul>
+                                   </div>
+                                </div>
+                  </div>
+              
+              
+                 <div class="container col-sm-6">
+                    <h4>Sign Up</h2>
+                    <p class="main-graf">Don't be shy &ndash; let everyone know about your music tastes and how to keep in touch.</p>
+                    <form class="form-inline" action="/action_page.php">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                        <div class="form-check">
+                              <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                              </label>
+                        </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+         
+    
+           
+                    <h4>Sign In</h4>
+                    <form class="form-inline" action="/action_page.php">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                        <div class="form-check">
+                              <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox"> Remember me
+                              </label>
+                        </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </form>
+                </div> 
+       
+        
         <!-- User information -->
 
         <div class="user-info" id="user-name"></div>
@@ -326,6 +361,62 @@
         <ul id="list-of-friends">
 
             <!-- Amount of friend divs that are inserted will depend on that users amount on friends -->
+
+        <ul id="list-of-friends">
+
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_Flat1-07_2425108.png" alt="Card image">
+                    <div class="card-body">
+                      <h4 class="card-title">Ramiro Patton</h4>
+                      <p class="card-text"></p>
+                      <a href="#" class="btn btn-dark">See Profile</a>
+                    </div>
+            </div> 
+
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_marvelgirl_1092588.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Lana Francis</h4>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-dark">See Profile</a>
+                    </div>
+            </div> 
+
+             <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_Sed-05_2377472.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Danielle Pope</h4>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+            </div> 
+    
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_ninja-simple_.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Jonathon Pittman</h4>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+            </div> 
+
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_Sed-20_2377459.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Mack Massey</h4>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+            </div> 
+            
+            <div class="card" style="width:400px">
+                    <img class="card-img-top" src="if_Sed-30_2377454.png" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Jaime White</h4>
+                            <p class="card-text"></p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                    </div>
+             </div>       
 
         </ul>
 
