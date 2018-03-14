@@ -4,8 +4,17 @@
     padding: 0;
 }
 
+/*#lineDrawing{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin: 4px;
+    display: inline-block;
+}*/
+
 html {
     font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 body {
@@ -18,17 +27,112 @@ body {
 #main-nav {
     flex-grow: 1;
     flex-basis: 0;
-    border: 1px solid black;
+    background-color: #090909;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.navbar {
+    min-height: 75px;
 }
 
 .page {
     flex-grow: 10;
     flex-basis: 0;
-    border: 1px solid black;
+}
+
+.nav-item {
+    color: #A0A0A0;
+    font-size: 20px;
+    background-color: #090909;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-brand {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+#home-page-tag-line {
+    font-size: 40px;
+    text-align: right;
+    margin-top: 0;
+    margin-right: 60px;
+}
+
+.main-graf {
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 24px;
+    margin-left: 60px;
+}
+
+.benefits {
+    font-size: 20px;
+    font-weight: 80px;
+    margin-left: 80px;
+}
+
+.intro-graf {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 0;
+}
+
+#home-page-info-container {
+    padding-top: 80px;
+}
+
+.application-info {
+    float: left;
+    text-align: center;
+    margin-right: 10;
+    background-color: #A0A0A0;
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.user-quotes {
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    background-color: #464646;
+    color: #A0A0A0;
+    padding: 10px;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 #main-footer {
     flex-grow: 1;
     flex-basis: 0;
     border: 1px solid black;
+    font-family: 'Barlow Condensed', sans-serif;
 }
+
+/* these are styles for show page */
+.panel-body {
+    word-break: break-all;
+  }
+
+  .lineItemStyle {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    float: none;
+    margin: 0 auto;
+  }
+
+  .ticketLink {
+    font-size: 16px;
+  }
+
+  .invite {
+    margin-left: 10px;
+  }
+  /* end of styles for show page */

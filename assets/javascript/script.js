@@ -11,6 +11,8 @@ var config = {
 
 window.onload = () => {
 
+    // --------------- Page changing functionality --------------- //
+
     const navTabs = document.getElementsByClassName('nav-item');
 
     const pages = document.getElementsByClassName('page');
