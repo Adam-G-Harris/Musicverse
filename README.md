@@ -22,4 +22,8 @@
    * Ryan is implementing Firebase which is where our repeating element comes from
 * Must have User Input Validation
   * this will come from Firebase
+  
+  
+  [Project Presentation](https://docs.google.com/presentation/d/1vw3162cE1KutN547dcoaUsg62aOoSLKjHRo823K6-Xg/edit?usp=sharing)
+
 
