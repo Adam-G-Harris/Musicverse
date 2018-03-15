@@ -1,14 +1,3 @@
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyA3Wi8pjiM9gWl9vpYE8wzuiApYb2d_s8I",
-    authDomain: "musicverse-e0621.firebaseapp.com",
-    databaseURL: "https://musicverse-e0621.firebaseio.com",
-    projectId: "musicverse-e0621",
-    storageBucket: "musicverse-e0621.appspot.com",
-    messagingSenderId: "179210130029"
-};
-firebase.initializeApp(config);
-
 window.onload = () => {
 
     // --------------- Page changing functionality --------------- //
@@ -16,6 +5,8 @@ window.onload = () => {
     const navTabs = document.getElementsByClassName('nav-item');
 
     const pages = document.getElementsByClassName('page');
+
+    const mainNav = document.getElementById('main-nav');
 
     for (let i = 0; i < navTabs.length; i++) {
 
@@ -27,6 +18,17 @@ window.onload = () => {
         let text = e.target.textContent;
 
         for (let i = 0; i < pages.length; i++) {
+
+            if (text.toLowerCase() === 'home') {
+
+                mainNav.style.position = 'absolute';
+                mainNav.style.color = 'white';
+
+            } else {
+
+                mainNav.style.position = 'relative';
+                mainNav.style.color = 'black';
+            }
 
             text.toLowerCase() === pages[i].attributes[2].nodeValue ?
                 pages[i].style.display = 'initial' :
