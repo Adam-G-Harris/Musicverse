@@ -24,6 +24,7 @@ body {
     justify-content: flex-end;
 }
 
+
 .nav-item {
     margin: 0 1.5rem;
     cursor: pointer;
@@ -175,7 +176,6 @@ body {
     width: 25vw;
     padding: 2rem;
     text-align: center;
-    border: 1px solid black;
 }
 
 .section-head {
