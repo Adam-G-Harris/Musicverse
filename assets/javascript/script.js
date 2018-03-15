@@ -30,7 +30,7 @@ window.onload = () => {
 
     const tagLine = anime({
         targets: '#home-page-tag-line',
-        delay: 3000,
+        delay: 2000,
         duration: 4000,
         translateY: [20, 0],
         opacity: [0, 1],
@@ -45,7 +45,7 @@ window.onload = () => {
         opacity: {
             0: 1
         },
-        delay: 800,
+        delay: 1000,
         duration: 3000,
         easing: 'quint.out'
     });
