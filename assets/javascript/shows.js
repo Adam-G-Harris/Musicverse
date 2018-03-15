@@ -1,4 +1,7 @@
 //Shows page script starts here
+
+const temp = document.getElementById('temp');
+
 function searchBandsInTown(artist) {
 
   $.ajax({
@@ -6,7 +9,7 @@ function searchBandsInTown(artist) {
       url: "https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey=1VJKJTqp0WTGYhSG3JACStAvdDDvq4CR&keyword='" + artist + "'",
     })
     .then(function (json) {
-      console.log(json._embedded.events);
+      temp.style.display = 'block';
       var cList = $('ul.list-group')
       $.each(json._embedded.events, function (i) {
         var cityState = `${json._embedded.events[i]._embedded.venues[0].city.name}, ${json._embedded.events[i]._embedded.venues[0].state.name}`
@@ -24,6 +27,7 @@ function searchBandsInTown(artist) {
       });
     });
 }
+
 // Event handler for user clicking the select-artist button
 $("#select-artist").on("click", function (event) {
   // Preventing the button from trying to submit the form
@@ -33,5 +37,4 @@ $("#select-artist").on("click", function (event) {
   var inputArtist = $("#artist-input").val().trim();
   // Running the searchBandsInTown function (passing in the artist as an argument)
   searchBandsInTown(inputArtist);
-
 });
