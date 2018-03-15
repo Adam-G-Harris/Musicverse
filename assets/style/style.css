@@ -24,7 +24,6 @@ body {
     justify-content: flex-end;
 }
 
-
 .nav-item {
     margin: 0 1.5rem;
     cursor: pointer;
@@ -187,7 +186,7 @@ body {
     border: 1px solid black;
 }
 
-/* these are styles for show page */
+/* start styles for show page */
 
 .panel-body {
     word-break: break-all;
