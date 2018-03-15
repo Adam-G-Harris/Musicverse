@@ -1,7 +1,7 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -25,9 +25,9 @@ body {
 }
 
 .nav-item {
-    margin: 0 1.5rem;
     cursor: pointer;
     font-weight: 200;
+    margin: 0 1.5rem;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
@@ -46,10 +46,15 @@ body {
 }
 
 #home-page-title {
-    font-size: 4.5rem;
+    display: flex;
     font-weight: 100;
-    text-align: center;
+    font-size: 4.5rem;
     letter-spacing: 5px;
+    justify-content: center;
+}
+
+#second-title {
+    color: rgb(187, 183, 150);
 }
 
 #home-page-tag-line {
@@ -178,8 +183,8 @@ body {
 }
 
 .section-head {
-    font-size: 1.9rem;
     font-weight: 300;
+    font-size: 1.9rem;
 }
 
 #main-footer {
