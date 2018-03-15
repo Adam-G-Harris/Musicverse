@@ -8,11 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/style/style.css">
-
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+
 
     <title>MusicVerse</title>
 
@@ -37,12 +39,14 @@
 
             <!-- Title -->
 
-            <div id="home-page-title">
+            <div id="home-page-title">MusicVerse</div>
 
+        
                 Music
                 <span id='second-title'>Verse</span>
 
             </div>
+
 
             <!-- Tag line -->
 
@@ -58,6 +62,7 @@
 
                 <div class="quote-title">
 
+
                     <i class="material-icons">group</i> Group
 
                 </div>
@@ -70,6 +75,7 @@
 
                         <img src="assets/images/ayo-ogunseinde-93181-unsplash.jpg" alt="User" class='user-quote-image'> @musicfan
                         <div class="verify">
+
 
                             Verify
                             <i class="material-icons">done</i>
@@ -158,6 +164,21 @@
             </div>
 
         </div>
+
+        <!-- <p class="main-graf">Great bands are everywhere. But the best shows aren't always big news.</p>
+        <p class="main-graf">Musicverse to the rescue! We make it easy to:</p>
+        <ul class="benefits">
+            <li>Track the bands you love</li>
+            <li>Share news about great shows</li>
+            <li>Find places nearby to eat, meet, and more!</li>
+        </ul>
+        <p class="intro-graf">Music is meant to be shared.</p> -->
+
+        <!-- Button links to profile sign up page -->
+
+        <!-- <button id="btn-get-started">Get started!</button> -->
+
+        <!-- Home page information container -->
 
     </div>
 
@@ -262,118 +283,32 @@
 
     <!-- SHOWS PAGE -->
 
-    <div id='shows-page' class="page" data-name="shows">
+      <div class="card" style="width: 50rem;">
+    <img class="card-img-top">
+    <div class="card-body">
+      <h1 class="card-title">
+        <strong>
+          <i class="fas fa-music"></i> Upcoming Shows
+        </strong>
+      </h1>
+      <form id="artist-form">
 
-        <div id="upcoming-shows-container">
-
-            <div class="shows-title">
-
-                <h1 class="page-head">Upcoming shows</h1>
-
-            </div>
-
-            <div class="panel panel-default main-graf">
-                <!-- Default panel contents -->
-                <div class="panel-heading">The countdown is on to these great shows...</div>
-                <div class="panel-body">
-                </div>
-
-                <!-- Table -->
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Band-Headliner</th>
-                            <th scope="col">Band-Opening</th>
-                            <th scope="col">Venue</th>
-                            <th scope="col">Date</th>
-                            <th scope="col">Time</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Starlight Kansas City Mo</td>
-                            <td>May 10, 2018</td>
-                            <td>7:00pm</td>
-                        </tr>
-                        <th scope="row">2</th>
-                        <td>Riot Room</td>
-                        <td>July 4, 2018</td>
-
-                    </tbody>
-
-
-                    <li class="list-group-item show-info-card upcoming-show-card">The National</li>
-                    <li class="list-group-item show-info-card upcoming-show-card">Fleetwood Mac</li>
-                    <li class="list-group-item show-info-card upcoming-show-card">Metallica</li>
-                    <li class="list-group-item show-info-card upcoming-show-card">Lord Huron</li>
-                    </ul>
-            </div>
-
-        </div>
-
-        <p class="main-graf">The countdown is on to these great shows ...</p>
-
-        <form id="artist-form">
-
-            <!-- Label for Text Box -->
-            <label for="artist-input">Choose Your Artist</label>
-
-            <!-- Text Input Box -->
-            <input type="text" id="artist-input">
-
-            <!-- Submit Button -->
-            <input id="select-artist" type="submit" value="GO!">
-
-        </form>
-
-        <!-- Card -->
-
-        <div class="card">
-
-            <img class="card-img-top">
-
-            <div class="card-body">
-
-                <h5 class="card-title">
-
-                    <strong>
-
-                        <i class="fas fa-music"></i> Upcoming Shows
-
-                    </strong>
-
-                </h5>
-
-            </div>
-
-            <ul class="list-group list-group-flush"></ul>
-
-        </div>
-
-        <!-- Container for a list of past shows and their data, should be on the right side -->
-
-        <div id="past-shows-container">
-
-            <div class="shows-title">
-
-                <h2 class="section-head">Show Archive</h2>
-
-            </div>
-
-            <p class="main-graf">Think of this as your digital ticket stub.</p>
-
-            <!-- I put 3 divs as an example, the actual amount will come from the API call -->
-
-            <div class="show-info-card past-show-card"></div>
-            <div class="show-info-card past-show-card"></div>
-            <div class="show-info-card past-show-card"></div>
-
-        </div>
-
+        <!-- Label for Text Box -->
+        <label for="artist-input">Choose Your Artist</label>
+    
+        <!-- Text Input Box -->
+        <input type="text" id="artist-input">
+        <br>
+    
+        <!-- Submit Button -->
+        <input id="select-artist" type="submit" value="GO!">
+      </form>
     </div>
+    <ul class="list-group list-group-flush">
+    </ul>
+  </div>
 
+  
     <!-- FRIENDS LIST PAGE -->
 
     <div id="friends-list-page" class="page" data-name="friends">
