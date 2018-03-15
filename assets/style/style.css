@@ -4,137 +4,207 @@
     padding: 0;
 }
 
-
 html {
     font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;   
-    
-   
+    overflow-x: hidden;
+    font-family: 'Avenir Next';
 }
-
-.page {
-    flex-grow: 10;
-    flex-basis: 0;
-    /*border: 1px solid black;*/
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-.background-image {
-   
-    height: 100%; 
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 #main-nav {
-    flex-grow: 1;
-    flex-basis: 0;
-    border: 1px solid black;
-    background-color: #090909;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 30px;
-}
-.navbar {
-  min-height: 75px;
+    top: 0;
+    right: 0;
+    display: flex;
+    padding: 2rem;
+    color: white;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 
 .nav-item {
-    color: #A0A0A0;
-    font-size: 20px;
-    background-color: #090909;
-    padding: 10px;
-    margin-right:10px;
-
+    margin: 0 1.5rem;
+    cursor: pointer;
+    font-weight: 200;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
 }
 
-.navbar-brand {
-    text-transform: uppercase;
-    font-size: 20px;
+#hero {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-image: url("../images/Hero-disk.png");
+}
 
+#home-page-title {
+    font-size: 4.5rem;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: 5px;
 }
-.page {
-    flex-grow: 10;
-    flex-basis: 0;
-    padding: 40px;
-}
+
 #home-page-tag-line {
-    font-size: 40px;
-    text-align: right;
-    margin-top: 0;
-    margin-right: 60px;
-
+    margin-top: 1rem;
+    text-align: center;
 }
+
+#hero>i {
+    top: 38vh;
+    position: relative;
+}
+
 .main-graf {
     font-size: 20px;
     font-weight: 100;
-    line-height: 24px; 
-    margin-left: 60px; 
 }
 
 .benefits {
     font-size: 20px;
     font-weight: 80px;
-    margin-left: 80px;
-    
-    
 }
+
 .intro-graf {
     font-size: 40px;
     text-align: center;
-    margin-top: 0;
-
 }
 
-#home-page-info-container {
-    padding-top: 80px;
-}
-.application-info {
-    float: left;
-    text-align: center;
-    /*margin-right: 20px;*/
-    background-color: #A0A0A0;
-    margin-top: 20px;
-    padding: 20px;
-    font-size: 16px;
-    font-family: 'Barlow Condensed', sans-serif;
+#user-quotes-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(243, 243, 243);
 }
 
 .user-quotes {
-    float: left;
-    /*margin-right: 20px;*/
-    margin-top: 20px;
-    
-    background-color: #464646;
-    color: #A0A0A0;
-    padding: 10px;
-    font-family: 'Barlow Condensed', sans-serif;
+    width: 20vw;
+    height: 40%;
+    display: flex;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 2px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(248, 248, 248);
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
 
+.quotes-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.user-footer {
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
 
-.sign {
-    float: left;
-    
+.user-quote-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    border-radius: 50%;
+}
+
+.quote-title {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 200;
+    align-items: center;
+    letter-spacing: 2px;
+    font-family: "Helvetica Neue";
+}
+
+.quote-title>i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: rgb(187, 183, 150);
+}
+
+.quote {
+    flex-grow: 2;
+    flex-basis: 0;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.verify {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    flex-basis: 0;
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: rgb(187, 183, 150);
+}
+
+.verify>i {
+    font-size: 1rem;
+}
+
+#info-section {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.application-info {
+    width: 25vw;
+    padding: 2rem;
+    text-align: center;
+}
+
+.section-head {
+    font-size: 1.9rem;
+    font-weight: 300;
 }
 
 #main-footer {
-    flex-grow: 1;
-    flex-basis: 0;
     border: 1px solid black;
-    font-family: 'Barlow Condensed', sans-serif;
 }
+
+/* these are styles for show page */
+
+.panel-body {
+    word-break: break-all;
+}
+
+.lineItemStyle {
+    padding-bottom: 50px;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+.ticketLink {
+    font-size: 16px;
+}
+
+.invite {
+    margin-left: 10px;
+}
+
+/* end of styles for show page */

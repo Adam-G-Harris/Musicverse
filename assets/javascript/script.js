@@ -1,4 +1,17 @@
+// Initialize Firebase
+var config = {
+    apiKey: "AIzaSyA3Wi8pjiM9gWl9vpYE8wzuiApYb2d_s8I",
+    authDomain: "musicverse-e0621.firebaseapp.com",
+    databaseURL: "https://musicverse-e0621.firebaseio.com",
+    projectId: "musicverse-e0621",
+    storageBucket: "musicverse-e0621.appspot.com",
+    messagingSenderId: "179210130029"
+};
+firebase.initializeApp(config);
+
 window.onload = () => {
+
+    // --------------- Page changing functionality --------------- //
 
     const navTabs = document.getElementsByClassName('nav-item');
 
@@ -39,18 +52,40 @@ window.onload = () => {
     init();
 };
 
-var els = document.querySelectorAll('#nodeList .el');
+//Logic for BandsInTown API Call//
+function searchBandsInTown(artist) {
+    // Querying the bandsintown api for the selected artist, the ?app_id parameter is required, but can equal anything
+    var queryURL = "https://rest.bandsintown.com/artists/" + artist + "?app_id=codingbootcamp";
+    $.ajax({
+        url: queryURL,
+        method: "GET"
+    }).then(function (response) {
 
-var nodeList = anime({
-  targets: els,
-  translateX: 250
+        // Printing the entire object to console
+        console.log(response);
+
+        // Constructing HTML containing the artist information
+        var artistName = $("<h1>").text(response.name);
+        var artistURL = $("<a>").attr("href", response.facebook_page_url).append(artistName);
+        var artistImage = $("<img>").attr("src", response.thumb_url);
+
+
+
+
+        // Empty the contents of the artist-div, append the new artist content
+        $("#artist-div").empty();
+        $("#artist-div").append(artistURL, artistImage);
+    });
+
+}
+
+// Event handler for user clicking the select-artist button
+$("#select-artist").on("click", function (event) {
+    // Preventing the button from trying to submit the form
+    event.preventDefault();
+    // Storing the artist name
+    var inputArtist = $("#artist-input").val().trim();
+
+    // Running the searchBandsInTown function (passing in the artist as an argument)
+    searchBandsInTown(inputArtist);
 });
-var lineDrawing = anime({
-    targets: '#lineDrawing .lines path',
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'easeInOutSine',
-    duration: 1500,
-    delay: function(el, i) { return i * 250 },
-    direction: 'alternate',
-    loop: true
-  });
