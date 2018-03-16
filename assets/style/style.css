@@ -57,6 +57,10 @@ body {
     color: rgb(187, 183, 150);
 }
 
+.ten {
+    text-align: center;
+}
+
 #home-page-tag-line {
     margin-top: 1rem;
     text-align: center;
@@ -103,6 +107,22 @@ body {
     flex-direction: column;
     justify-content: center;
     background-color: rgb(248, 248, 248);
+}
+
+.card {
+    text-align: center;
+}
+
+#friends-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#list-of-friends {
+    display: grid;
+    padding: 1rem 4rem 4rem 4rem;
+    grid-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .c {
@@ -211,8 +231,14 @@ body {
 }
 
 .section-head {
+    margin: 2rem;
     font-weight: 200;
     font-size: 1.9rem;
+    text-align: center;
+}
+
+.one {
+    font-weight: 300;
 }
 
 .thinking-image {
@@ -270,12 +296,23 @@ body {
 
 #temp {
     display: none;
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
     letter-spacing: 1px;
     font-family: 'Helvetica Neue';
 }
 
+#select-artist {
+    border-radius: 2px;
+    padding: .5rem 1rem;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(221, 221, 221);
+}
+
 .finish {
+    display: grid;
+    padding: 3rem;
+    grid-gap: 3rem;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 }
 
@@ -356,7 +393,13 @@ body {
     width: 90%;
     height: 1px;
     margin: 1rem auto;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.397);
+}
+
+.card>img {
+    width: 70%;
+    border-radius: 50%;
+    margin: 1rem auto 0 auto;
 }
 
 .sub {
